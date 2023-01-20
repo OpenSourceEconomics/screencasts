@@ -5,15 +5,15 @@ channels:
   - nodefaults
 
 dependencies:
-  - conda-build
-  - python=3.10
-  - pytask
-  - pytask-latex
-  - pytask-parallel
   - estimagic
   - pip
   - plotly
+  - pygraphviz
+  - pytask
+  - pytask-latex
+  - pytask-parallel
   - python-kaleido
+  - python=3.10
 
   - pip:
       - black

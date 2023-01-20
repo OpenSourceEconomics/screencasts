@@ -6,6 +6,7 @@ To run the examples, make sure you have [conda](https://docs.conda.io/en/latest/
 
 ```console
 $ conda env create
+$ conda activate screencasts
 ```
 
 Then navigate to the example you want to try out and run `pytask`. Sometimes you will have to add the root folder of the example to Python's search path, as described in the screencast on advanced features.
