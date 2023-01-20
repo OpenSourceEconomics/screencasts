@@ -1,0 +1,21 @@
+name: screencasts
+
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  - conda-build
+  - python=3.10
+  - pytask
+  - pytask-latex
+  - pytask-parallel
+  - estimagic
+  - pip
+  - plotly
+  - python-kaleido
+
+  - pip:
+      - black
+      - pre-commit
+      - pdbpp
