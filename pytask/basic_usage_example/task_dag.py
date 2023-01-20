@@ -18,7 +18,7 @@ def task_draw_dag(produces):
     nx.set_node_attributes(dag, shapes_of_tasks)
 
     graph = nx.nx_agraph.to_agraph(dag)
-    graph.draw(produces, prog="dot", args='-bgcolor="transparent" -ratio=9/16')
+    graph.draw(produces, prog="dot", args='-Gbgcolor="transparent" -Gratio=9/16')
 
 
 def get_label(node):
