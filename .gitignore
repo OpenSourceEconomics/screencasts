@@ -11,6 +11,7 @@ _build
 __pycache__
 _generated
 bld
+*.html
 
 *.egg-info
 

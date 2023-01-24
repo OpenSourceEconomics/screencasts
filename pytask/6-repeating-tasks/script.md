@@ -1,31 +1,11 @@
-# Pytask: Nifty features intro
+# Outline
 
-- Note that in example with parametrization, "parametrized" is only added to avoid
-  duplicate targets
-- Remove when copying over to pytask/examples repo
-## [Example in background, face big]
-
-- Welcome
-- Will show how to use some more complex features of pytask
-- Again will be using a minimal example
-  - Actually simpler in some ways than that in the earlier screencasts
-  - Initially, just a single task
-
-## Outline
-
-- Complex projects
-  - will be distributed across multiple files and directories
-  - Need way to import stuff
-  - Standard Python package imports, but not everyone will be familiar with them
-- Think of task as a function
-  - Takes files as inputs, writes out files as outputs
-  - Initial example had exactly one of each
-  - Now will look at multiple outputs
 - Think of task as a function II
   - Will call it with different parametrisations
   - Regression model with different sets of regressors
   - Simulation model with varying number of seeds
   - Economic model with different parameters
+
 
 ## [Full screen picture with initial example]
 
@@ -38,7 +18,7 @@
 # [VS Code, directory tree / config.py ]
 
 - Define variables SRC and BLD in central config.py file.
-- In main directory, type `conda develop .`
+- In main directory, type `pip install -e .`
 - In config file, define often-used variables, very often paths
 - CAPITAL LETTERS to remind ourselves these are constants
 - Python's Pathlib module is very handy here
@@ -77,8 +57,8 @@ def task_run_optimization(produces):
 def _sphere(params):
     return (params["value"] ** 2).sum()
 ```
-- Run pytask
 
+- Run pytask
 
 ## [Show graph with duplication and combining two optimizers in a graph]
 
@@ -107,6 +87,7 @@ def _sphere(params):
 
 - change `PRODUCES_ALGO` to `PRODUCES_ALGOS`
 - make list comprehension:
+
 ```
 PRODUCES_ALGOS = [
     [
@@ -119,6 +100,7 @@ PRODUCES_ALGOS = [
     for algo in ["scipy_lbfgsb", "scipy_neldermead"]
 ]
 ```
+
 - Run pytask
 - Hard to know what 0, 1 is in complex projects
 

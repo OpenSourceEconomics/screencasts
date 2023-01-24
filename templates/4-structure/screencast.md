@@ -1,8 +1,6 @@
 ---
 title: Project organisation
 author: Hans-Martin von Gaudecker
-organization: Department of Economics, Universität Bonn
-course: Effective Programming Practices for Economists
 copyright: Creative Commons
 ---
 
@@ -27,19 +25,19 @@ copyright: Creative Commons
 
 ### src/minimum_wages
 
-*(only Python example)*
+_(only Python example)_
 
 - **data**
 - **data_management**
 - **analysis**
 - **final**
-- __init__.py
+- **init**.py
 - config.py
 - utilities.py
 
 ### bld/python
 
-*(after running pytask)*
+_(after running pytask)_
 
 - data
 - models
@@ -49,7 +47,7 @@ copyright: Creative Commons
 
 ### Additional files in project root directory
 
-*(after running pytask)*
+_(after running pytask)_
 
 - minimum_wages.pdf
 - minimum_wages_pres.pdf

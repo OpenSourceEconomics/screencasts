@@ -1,0 +1,3 @@
+# Going through cookiecutter
+
+## Welcome
