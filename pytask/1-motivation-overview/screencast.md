@@ -1,15 +1,15 @@
 ---
-paginate: true
-marp: true
 title: Project organisation
 author: Hans-Martin von Gaudecker
 copyright: Creative Commons
-# description: "Brown Bag Seminar"
-theme: custom
+theme: dracula
 math: mathjax
+footer: Hans-Martin von Gaudecker
+header: Project organisation
+paginate: true
+marp: true
+size: 4K
 ---
-
-<!-- paginate: false -->
 
 # Project organisation
 
@@ -17,14 +17,14 @@ Hans-Martin von Gaudecker
 
 ---
 
-### Guiding principles
+# Guiding principles
 
 - Clear separation of inputs and outputs
 - Group files in directories by step of the analysis
 
 ---
 
-### Files / directories
+# Files / directories
 
 - **.git**
 - **src**
@@ -40,7 +40,7 @@ Hans-Martin von Gaudecker
 
 ---
 
-### src/minimum_wages
+# src/minimum_wages
 
 _(only Python example)_
 
@@ -54,7 +54,7 @@ _(only Python example)_
 
 ---
 
-### bld/python
+# bld/python
 
 _(after running pytask)_
 
@@ -66,7 +66,7 @@ _(after running pytask)_
 
 ---
 
-### Additional files in project root directory
+# Additional files in project root directory
 
 _(after running pytask)_
 
